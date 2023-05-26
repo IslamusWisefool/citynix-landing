@@ -1,0 +1,19 @@
+.slider {
+  background-color: var(--bg-color);
+  padding: 3.5rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &-img {
+      margin: 0 auto;
+      max-width: 75px;
+    }
+    &-title {
+    }
+    &-text {
+    }
+  }
+}

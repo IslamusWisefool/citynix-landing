@@ -1,0 +1,40 @@
+.diary {
+  --diary-col: 4;
+  --diary-row: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--diary-col), 1fr);
+  grid-template-rows: repeat(var(--diary-row), auto);
+  gap: 1rem;
+
+  padding: 2rem;
+  background-color: var(--bg-color-secondary);
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    color: var(--a-color);
+    &-step {
+      font-size: 0.7rem;
+    }
+    &-date {
+      font-size: 2.3rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+    &-title {
+      margin: 0.5em 0;
+    }
+    &-text {
+      margin: 0.5em 0;
+    }
+  }
+}
+
+@media (max-width: 855px) {
+  .diary {
+    --diary-col: 2;
+    --diary-row: 2;
+  }
+}

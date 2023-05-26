@@ -1,0 +1,62 @@
+:root[data-theme="light"] {
+  --bg-color: rgb(255, 248, 229);
+  --bg-color-secondary: #ffddc6;
+  --text-color: #09272a;
+  --a-color: #616161;
+  --btn-text-color: #fff;
+  --btn-bg-color: #7a231a;
+  --btn-bg-color_hover: #962b1f;
+  --accent: #bb5044;
+}
+:root[data-theme="dark"] {
+  --bg-color: #02030d;
+  --bg-color-secondary: #4c1313;
+  --text-color: #d7dbf9;
+  --a-color: #616161;
+  --btn-text-color: #000;
+  --btn-bg-color: #d1bc1f;
+  --btn-bg-color_hover: #c1ae1c;
+  --accent: #c5ae00;
+}
+:root[data-theme="custom"] {
+  --bg-color: #fff7f5;
+  --bg-color-secondary: #fff88f;
+  --text-color: #0a0200;
+  --a-color: #616161;
+  --btn-text-color: #000;
+  --btn-bg-color: #fb8974;
+  --btn-bg-color_hover: #e47c69;
+  --accent: #fb9e8d;
+}
+:root {
+  --box-shadow: 1px 10px 22px -20px var(--accent);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  color: black;
+}
+li {
+  list-style: none;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  &:hover {
+    color: var(--a-color);
+  }
+  &:target {
+    color: var(--a-color);
+  }
+}
