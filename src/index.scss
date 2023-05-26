@@ -1,6 +1,8 @@
 @import "style/fonts";
 @import "style/var";
 @import "style/style";
+@import "./modules/scrollToTop/scrollToTop.scss";
+@import "./modules/modal/modal.scss";
 @import "./modules/navbar/nav.scss";
 @import "./modules/btn/btn.scss";
 @import "style/welcome";
